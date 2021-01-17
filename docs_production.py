@@ -183,7 +183,7 @@ context = {
     'ao_correspond_add_horz': ws['L2'].value,
     'ao_property_add_vert': ws['M2'].value,
     'ao_correspond_add_vert': ws['N2'].value,
-    'notice_date': notice_date.strftime("%d %B %Y"),
+    'notice_date': notice_date.strftime("%-d %B %Y"),
     'bo_letter_names': ws['P2'].value,
     'bo_I_We': ws['Q2'].value,
     'bo_my_our': ws['R2'].value,
@@ -315,11 +315,11 @@ print(ao_property_add_vert)
 print(ao_correspond_add_horz)
 print(ao_correspond_add_vert)'''
 print(notice_date.strftime("%d %B %Y"))
-#print(x.strftime("%b %d %Y %H:%M:%S"))
+#print(type(ao_letter_names))
 
 tpl = DocxTemplate('templates/'+selected_doc+'.docx')
 tpl.render(context, jinja_env)
-tpl.save(folder+'/'+selected_doc+'('+ao_property_add_horz+').docx')
+tpl.save(folder+'/'+selected_doc+'.docx')
 
 
 #unoconv -f ('output/'+selected_doc+'.docx', 'output/'+selected_doc+'.pdf')

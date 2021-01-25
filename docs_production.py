@@ -26,7 +26,7 @@ for f in glob.glob(selected_ao+"*"):
 
 # User selects document
 title = "Select the document you wish to produce:"
-options = ["01 - Letter of Appointment BO", "01 - Letter of Appointment AO", "01 - Notices Served (ALL) - Corr (Email)", "01 - Notices Served (ALL) - Corr", "01 - Notices Served (ALL) - Prop (Email)", "01 - Notices Served (ALL) - Prop", "12.1 - Award 7th", "12.1 - Award D1", "14.1 - Schedule of Condition"]
+options = ["01 - Letter of Appointment BO", "01 - Letter of Appointment AO", "01 - Notices Served (ALL) - Corr (Email)", "01 - Notices Served (ALL) - Corr", "01 - Notices Served (ALL) - Prop (Email)", "01 - Notices Served (ALL) - Prop", "05.1 - Conditional Consent", "05.1 - Conditional Consent (BO SIGNATURE)", "12.1 - Award 7th", "12.1 - Award D1", "14.1 - Schedule of Condition"]
 selected_doc, index = pick(options, title)
 print(selected_doc)
 #print(index)
